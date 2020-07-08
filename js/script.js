@@ -10,11 +10,11 @@ stampa un messaggio appropriato
 var elencoMail = []
 
 //creo l'elenco delle mail usando un ciclo for (da 1@gmail.com a 10@gmail.com)
-for (var i = 0; i<10;i++) {
+for (var i = 1; i<=10;i++) {
     if (elencoMail.length == 0) {
-        elencoMail=[i+1+'@gmail.com'];
+        elencoMail=[i+'@gmail.com'];
     }
-    else {elencoMail.push(i+1+'@gmail.com');
+    else {elencoMail.push(i+'@gmail.com');
     }
 }
 
