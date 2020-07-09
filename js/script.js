@@ -1,5 +1,4 @@
-/*
----------CONSEGNA ESERCIZIO----------------
+/* 
 Chiedi all’utente la sua email,
 controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato
@@ -39,7 +38,9 @@ if (risultato==true) {
     document.getElementById('risultato').style.backgroundColor="red";
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
 // -------------------------aggiungo gioco dadi utente vs. pc-----------------
+
 // Generare un numero random da 1  a 6, sia per il giocatore sia per il computer
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
