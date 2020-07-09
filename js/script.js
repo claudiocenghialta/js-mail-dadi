@@ -38,3 +38,22 @@ if (risultato==true) {
     document.getElementById('risultato').innerHTML="KO la tua mail "+email+" non è valida";
     document.getElementById('risultato').style.backgroundColor="red";
 }
+
+// -------------------------aggiungo gioco dadi utente vs. pc-----------------
+// Generare un numero random da 1  a 6, sia per il giocatore sia per il computer
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+var dadoUtente = Math.floor(Math.random()*6)+1
+var dadoComputer = Math.floor(Math.random()*6)+1
+var vincitore;
+if (dadoUtente == dadoComputer) {
+    vincitore="Parità";
+} else if (dadoUtente > dadoComputer) {
+    vincitore="Hai vinto!";
+} else {
+    vincitore="Hai perso!";
+}
+
+document.getElementById('vincitore').innerHTML = vincitore;
+document.getElementById('dadoUtente').innerHTML = dadoUtente;
+document.getElementById('dadoComputer').innerHTML = dadoComputer;
